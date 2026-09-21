@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Nucleo" id="page_nucleo">
+    <mxGraphModel dx="4018" dy="3608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1320" pageHeight="1220" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=none;locked=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" value="" vertex="1">
+          <mxGeometry height="1610" width="2180" x="-570" y="-130" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#55C1E0;strokeWidth=2;fontColor=#55C1E0;fontStyle=1;fontSize=24;align=center;verticalAlign=middle;fontFamily=Georgia;" value="MODELO DE DATOS HOSPITALARIO&lt;br&gt;Notación de Barker" vertex="1">
+          <mxGeometry height="90" width="960" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="text;html=1;fontSize=13;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Georgia;" value="Los atributos de cada entidad están ordenados de obligatorios a opcionales. PK subrayada; FK indicada en cursiva." vertex="1">
+          <mxGeometry height="30" width="960" x="40" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="136" width="280" x="-310" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="5" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FF7A66;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;fontFamily=Georgia;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;DEPARTAMENTO&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="5" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#FF7A66;strokeWidth=2;fontColor=#FFFFFF;fontSize=13;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u style=&quot;&quot;&gt;# id_departamento&lt;/u&gt;&lt;br&gt;*nombre&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="156" width="280" x="330" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="8" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#55C1E0;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;fontFamily=Georgia;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;MUNICIPIO&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="8" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#55C1E0;strokeWidth=2;fontColor=#FFFFFF;fontSize=13;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;# id_municipio&lt;/u&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;* id_departamento&lt;i&gt; (FK)&lt;/i&gt;&lt;br&gt;* nombre&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="group;align=left;" value="" vertex="1">
+          <mxGeometry height="156" width="280" x="1030" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="11" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FF7A66;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;fontFamily=Georgia;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ESPECIALIDAD&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="11" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#FF7A66;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_especialidad&lt;/u&gt;&lt;br&gt;&lt;br&gt;&lt;div&gt;* nombre&lt;br&gt;* categoria&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="290" width="280" x="260" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="14" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#55C1E0;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;fontFamily=Georgia;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;HOSPITAL&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="14" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#55C1E0;strokeWidth=2;fontColor=#FFFFFF;fontSize=13;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;# id_hospital&lt;/u&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;* nombre&lt;br&gt;* direccion&lt;br&gt;* id_municipio&lt;i&gt; (FK)&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;-----------------------------------------&lt;br&gt;o telefono&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="244" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="266" width="280" x="1090" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="17" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FF7A66;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="PERSONAL_ENCARGADO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="17" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#FF7A66;strokeWidth=2;fontColor=#FFFFFF;fontSize=13;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;# id_encargado&lt;/u&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;* nombre&lt;br&gt;* dpi&lt;br&gt;* puesto&lt;br&gt;* id_hospital&lt;i&gt; (FK)&lt;/i&gt;&lt;br&gt;-----------------------------------------&lt;br&gt;o telefono&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="396" width="280" x="-430" y="412" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="20" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FF7A66;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;fontFamily=Georgia;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;PACIENTE&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="20" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#FF7A66;strokeWidth=2;fontColor=#FFFFFF;fontSize=13;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;# id_paciente&lt;/u&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;* no_expediente&lt;br&gt;* nombres&lt;br&gt;* apellidos&lt;br&gt;* sexo&lt;br&gt;* fecha_nacimiento&lt;br&gt;* id_municipio&lt;i&gt; (FK)&lt;/i&gt;&lt;br&gt;* area&lt;br&gt;&lt;br&gt;-----------------------------------------&lt;br&gt;o dpi&lt;br&gt;o telefono&lt;br&gt;o no_seguro_social&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="350" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="346" width="280" x="150" y="925" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="23" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FF7A66;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;fontFamily=Georgia;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;MEDICO&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="23" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#FF7A66;strokeWidth=2;fontColor=#FFFFFF;fontSize=13;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u style=&quot;&quot;&gt;# id_medico&lt;/u&gt;&lt;br&gt;* nombre&lt;br&gt;* dpi&lt;br&gt;* tipo_medico&lt;br&gt;* id_hospital&lt;i style=&quot;&quot;&gt; (FK)&lt;/i&gt;&lt;br&gt;* id_especialidad&lt;i&gt; (FK)&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;-----------------------------------------&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;o telefono&lt;br&gt;o id_municipio&lt;i style=&quot;&quot;&gt; (FK)&lt;/i&gt;&lt;br&gt;o area&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="300" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="216" width="280" x="970" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="26" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#55C1E0;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;fontFamily=Georgia;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;ENFERMERO&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="26" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#55C1E0;strokeWidth=2;fontColor=#FFFFFF;fontSize=13;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;# id_enfermero&lt;/u&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;* nombre&lt;br&gt;* dpi&lt;br&gt;* tipo_enfermero&lt;br&gt;* id_hospital&lt;i&gt; (FK)&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="29" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="316" width="280" x="-430" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="29" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#55C1E0;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;fontFamily=Georgia;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;RESPONSABLE_PACIENTE&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="29" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#55C1E0;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_responsable&lt;/u&gt;&lt;br&gt;* id_paciente&lt;i&gt; (FK)&lt;/i&gt;&lt;br&gt;* nombre&lt;br&gt;* parentesco&lt;br&gt;&lt;br&gt;-----------------------------------------&lt;br&gt;o dpi&lt;br&gt;o telefono&lt;br&gt;o id_municipio&lt;i&gt; (FK)&lt;/i&gt;&lt;br&gt;o area" vertex="1">
+          <mxGeometry height="270" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="32" edge="1" parent="1" source="8" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=11;rounded=0;startFill=0;endFill=0;strokeColor=#C9D2DC;startArrow=ERzeroToMany;endArrow=ERone;" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" edge="1" parent="1" source="14" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=11;rounded=0;startFill=0;endFill=0;strokeColor=#C9D2DC;startArrow=ERzeroToMany;endArrow=ERone;" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34" edge="1" parent="1" source="20" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=11;rounded=0;startFill=0;endFill=0;strokeColor=#C9D2DC;startArrow=ERzeroToMany;endArrow=ERone;" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="35" edge="1" parent="1" source="29" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=11;rounded=0;startFill=0;endFill=0;strokeColor=#C9D2DC;startArrow=ERzeroToMany;endArrow=ERone;" target="20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="36" edge="1" parent="1" source="29" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=11;rounded=0;startFill=0;endFill=0;strokeColor=#C9D2DC;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="37" edge="1" parent="1" source="23" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=11;rounded=0;startFill=0;endFill=0;strokeColor=#C9D2DC;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="38" edge="1" parent="1" source="23" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=11;rounded=0;startFill=0;endFill=0;strokeColor=#C9D2DC;startArrow=ERzeroToMany;endArrow=ERone;" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="39" edge="1" parent="1" source="23" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=11;rounded=0;startFill=0;endFill=0;strokeColor=#C9D2DC;startArrow=ERzeroToMany;endArrow=ERone;" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="40" edge="1" parent="1" source="26" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=11;rounded=0;startFill=0;endFill=0;strokeColor=#C9D2DC;startArrow=ERzeroToMany;endArrow=ERone;" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="41" edge="1" parent="1" source="17" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=11;rounded=0;startFill=0;endFill=0;strokeColor=#C9D2DC;startArrow=ERzeroToMany;endArrow=ERone;" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Modelo Completo" id="page1">
+    <mxGraphModel dx="4316" dy="3820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3377" pageHeight="2877" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=none;locked=1;" value="" vertex="1">
+          <mxGeometry height="2877" width="3377" as="geometry" />
+        </mxCell>
+        <mxCell id="titlebox" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#55C1E0;strokeWidth=2;fontColor=#55C1E0;fontStyle=1;fontSize=22;align=center;verticalAlign=middle;fontFamily=Georgia;" value="MODELO DE DATOS HOSPITALARIO&lt;br&gt;MODELO COMPLETO" vertex="1">
+          <mxGeometry height="80" width="3257" x="60" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=1;fontSize=12;fontColor=#FFFFFF;align=center;verticalAlign=middle;fontFamily=Georgia;" value="Los atributos de cada entidad estan ordenados de obligatorios a opcionales. PK con # y subrayada; FK en cursiva, Atributos obligatorios con * y opcionales con&amp;nbsp;&lt;span style=&quot;font-size: 18px; text-align: left; white-space: normal;&quot;&gt;o&lt;/span&gt;." vertex="1">
+          <mxGeometry height="40" width="3257" x="60" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_departamento" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="132" width="280" x="490" y="1900" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_departamento_h" parent="grp_departamento" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FF7A66;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="DEPARTAMENTO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_departamento_b" parent="grp_departamento" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#FF7A66;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_departamento&lt;/u&gt;&lt;br&gt;&lt;br&gt;* nombre" vertex="1">
+          <mxGeometry height="86" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_municipio" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="156" width="280" x="1328" y="1403" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_municipio_h" parent="grp_municipio" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#55C1E0;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="MUNICIPIO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_municipio_b" parent="grp_municipio" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#55C1E0;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_municipio&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_departamento &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* nombre" vertex="1">
+          <mxGeometry height="110" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_especialidad" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="156" width="280" x="1619" y="2274" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_especialidad_h" parent="grp_especialidad" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FF7A66;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="ESPECIALIDAD" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_especialidad_b" parent="grp_especialidad" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#FF7A66;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_especialidad&lt;/u&gt;&lt;br&gt;&lt;br&gt;* nombre&lt;br&gt;* categoria" vertex="1">
+          <mxGeometry height="110" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_hospital" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="252" width="280" x="1715" y="918" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_hospital_h" parent="grp_hospital" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#55C1E0;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="HOSPITAL" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_hospital_b" parent="grp_hospital" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#55C1E0;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_hospital&lt;/u&gt;&lt;br&gt;&lt;br&gt;* nombre&lt;br&gt;* direccion&lt;br&gt;* id_municipio &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o telefono" vertex="1">
+          <mxGeometry height="206" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_paciente" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="396" width="280" x="1715" y="1221" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_paciente_h" parent="grp_paciente" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FF7A66;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="PACIENTE" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_paciente_b" parent="grp_paciente" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#FF7A66;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_paciente&lt;/u&gt;&lt;br&gt;&lt;br&gt;* no_expediente&lt;br&gt;* nombres&lt;br&gt;* apellidos&lt;br&gt;* sexo&lt;br&gt;* fecha_nacimiento&lt;br&gt;* id_municipio &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* area&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o dpi&lt;br&gt;o telefono&lt;br&gt;o no_seguro_social" vertex="1">
+          <mxGeometry height="350" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_responsable_paciente" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="324" width="280" x="1383" y="1027" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_responsable_paciente_h" parent="grp_responsable_paciente" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#55C1E0;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="RESPONSABLE_PACIENTE" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_responsable_paciente_b" parent="grp_responsable_paciente" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#55C1E0;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_responsable&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_paciente &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* nombre&lt;br&gt;* parentesco&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o dpi&lt;br&gt;o telefono&lt;br&gt;o id_municipio &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;o area" vertex="1">
+          <mxGeometry height="278" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_medico" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="348" width="280" x="1483" y="1875" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_medico_h" parent="grp_medico" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FF7A66;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="MEDICO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_medico_b" parent="grp_medico" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#FF7A66;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_medico&lt;/u&gt;&lt;br&gt;&lt;br&gt;* nombre&lt;br&gt;* dpi&lt;br&gt;* id_especialidad &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* tipo_medico&lt;br&gt;* id_hospital &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o telefono&lt;br&gt;o id_municipio &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;o area" vertex="1">
+          <mxGeometry height="302" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_enfermero" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="204" width="280" x="1331" y="542" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_enfermero_h" parent="grp_enfermero" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#55C1E0;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="ENFERMERO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_enfermero_b" parent="grp_enfermero" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#55C1E0;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_enfermero&lt;/u&gt;&lt;br&gt;&lt;br&gt;* nombre&lt;br&gt;* dpi&lt;br&gt;* tipo_enfermero&lt;br&gt;* id_hospital &lt;i&gt;(FK)&lt;/i&gt;" vertex="1">
+          <mxGeometry height="158" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_personal_encargado" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="276" width="280" x="1698" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_personal_encargado_h" parent="grp_personal_encargado" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#FF7A66;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="PERSONAL_ENCARGADO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_personal_encargado_b" parent="grp_personal_encargado" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#FF7A66;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_encargado&lt;/u&gt;&lt;br&gt;&lt;br&gt;* nombre&lt;br&gt;* dpi&lt;br&gt;* puesto&lt;br&gt;* id_hospital &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o telefono" vertex="1">
+          <mxGeometry height="230" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_cita_programada" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="300" width="280" x="2376" y="1494" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_cita_programada_h" parent="grp_cita_programada" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#27AE60;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="CITA_PROGRAMADA" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_cita_programada_b" parent="grp_cita_programada" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#27AE60;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_cita&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_paciente &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* id_medico &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* fecha&lt;br&gt;* hora&lt;br&gt;* estado&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o consultorio" vertex="1">
+          <mxGeometry height="254" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_consulta_paciente" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="348" width="280" x="2046" y="888" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_consulta_paciente_h" parent="grp_consulta_paciente" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#2ECC71;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="CONSULTA_PACIENTE" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_consulta_paciente_b" parent="grp_consulta_paciente" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#2ECC71;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_consulta&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_paciente &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* id_medico &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* fecha&lt;br&gt;* tipo_consulta&lt;br&gt;* referido_institucion&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o id_cita &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;o diagnostico&lt;br&gt;o notas" vertex="1">
+          <mxGeometry height="302" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_receta_medica" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="276" width="280" x="2051" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_receta_medica_h" parent="grp_receta_medica" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#27AE60;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="RECETA_MEDICA" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_receta_medica_b" parent="grp_receta_medica" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#27AE60;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_receta&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_consulta &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* fecha&lt;br&gt;* id_hospital &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o proxima_cita&lt;br&gt;o numero_clinica" vertex="1">
+          <mxGeometry height="230" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_medicamento_recetado" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="204" width="280" x="2383" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_medicamento_recetado_h" parent="grp_medicamento_recetado" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#2ECC71;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="MEDICAMENTO_RECETADO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_medicamento_recetado_b" parent="grp_medicamento_recetado" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#2ECC71;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_medicamento_recetado&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_receta &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* nombre&lt;br&gt;* dosis&lt;br&gt;* duracion" vertex="1">
+          <mxGeometry height="158" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_unidad_hospital" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="156" width="280" x="2377" y="1286" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_unidad_hospital_h" parent="grp_unidad_hospital" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#F2994A;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="UNIDAD_HOSPITAL" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_unidad_hospital_b" parent="grp_unidad_hospital" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#F2994A;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_unidad_hospital&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_hospital &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* tipo_unidad" vertex="1">
+          <mxGeometry height="110" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_camilla" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="180" width="280" x="2900" y="1349" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_camilla_h" parent="grp_camilla" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#F2C94C;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="CAMILLA" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_camilla_b" parent="grp_camilla" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#F2C94C;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_camilla&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_unidad_hospital &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* numero&lt;br&gt;* estado" vertex="1">
+          <mxGeometry height="134" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_ingreso" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="348" width="280" x="2046" y="1373" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_ingreso_h" parent="grp_ingreso" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#F2994A;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="INGRESO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_ingreso_b" parent="grp_ingreso" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#F2994A;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_ingreso&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_paciente &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* id_unidad_hospital &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* id_medico &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* fecha_hora&lt;br&gt;* motivo_ingreso&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o id_responsable &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;o id_camilla &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;o diagnostico_presuntivo" vertex="1">
+          <mxGeometry height="302" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_egreso" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="420" width="280" x="2014" y="2171" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_egreso_h" parent="grp_egreso" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#F2C94C;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="EGRESO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_egreso_b" parent="grp_egreso" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#F2C94C;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_egreso&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_ingreso &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* id_medico &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* fecha_hora&lt;br&gt;* diagnostico_principal&lt;br&gt;* motivo_egreso&lt;br&gt;* codigo_egreso&lt;br&gt;* egreso_sin_consentimiento&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o motivo_sin_consentimiento&lt;br&gt;o id_traslado &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;o dias_hospitalizado&lt;br&gt;o referido_otro_hospital" vertex="1">
+          <mxGeometry height="374" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_diagnostico_secundario" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="156" width="280" x="2222" y="2641" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_diagnostico_secundario_h" parent="grp_diagnostico_secundario" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#F2994A;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="DIAGNOSTICO_SECUNDARIO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_diagnostico_secundario_b" parent="grp_diagnostico_secundario" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#F2994A;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_diagnostico_secundario&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_egreso &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* descripcion" vertex="1">
+          <mxGeometry height="110" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_traslado" parent="1" style="group;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+          <mxGeometry height="324" width="280" x="2477" y="1846" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_traslado_h" parent="grp_traslado" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#F2C94C;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="TRASLADO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_traslado_b" parent="grp_traslado" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#F2C94C;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_traslado&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_paciente &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* id_medico_indica &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* fecha_hora&lt;br&gt;* id_unidad_destino &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* interno_destino&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o id_unidad_origen &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;o interno_origen" vertex="1">
+          <mxGeometry height="278" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_insumo" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="252" width="280" x="390" y="912" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_insumo_h" parent="grp_insumo" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#9B59B6;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="INSUMO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_insumo_b" parent="grp_insumo" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#9B59B6;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_insumo&lt;/u&gt;&lt;br&gt;&lt;br&gt;* nombre&lt;br&gt;* material&lt;br&gt;* tipo&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o descripcion" vertex="1">
+          <mxGeometry height="206" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_instrumento" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="252" width="280" x="60" y="1726" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_instrumento_h" parent="grp_instrumento" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#BB6BD9;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="INSTRUMENTO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_instrumento_b" parent="grp_instrumento" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#BB6BD9;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_instrumento&lt;/u&gt;&lt;br&gt;&lt;br&gt;* nombre&lt;br&gt;* tipo&lt;br&gt;* funcion&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o descripcion" vertex="1">
+          <mxGeometry height="206" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_equipo" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="252" width="280" x="1815" y="1730" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_equipo_h" parent="grp_equipo" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#9B59B6;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="EQUIPO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_equipo_b" parent="grp_equipo" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#9B59B6;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_equipo&lt;/u&gt;&lt;br&gt;&lt;br&gt;* nombre&lt;br&gt;* tipo&lt;br&gt;* funcion&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o descripcion" vertex="1">
+          <mxGeometry height="206" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_solicitud_cirugia" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="468" width="280" x="721" y="1197" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_solicitud_cirugia_h" parent="grp_solicitud_cirugia" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#BB6BD9;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="SOLICITUD_CIRUGIA" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_solicitud_cirugia_b" parent="grp_solicitud_cirugia" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#BB6BD9;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_solicitud&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_paciente &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* id_cirujano &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* caracter&lt;br&gt;* tipo_procedimiento&lt;br&gt;* fecha_hora_solicitud&lt;br&gt;* estado&lt;br&gt;* id_hospital &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o historia_clinica&lt;br&gt;o tiempo_estimado&lt;br&gt;o tipo_anestesia&lt;br&gt;o motivo_rechazo&lt;br&gt;o id_quirofano &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;o fecha_hora_agendada" vertex="1">
+          <mxGeometry height="422" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_requerimiento_insumo" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="156" width="280" x="391" y="1265" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_requerimiento_insumo_h" parent="grp_requerimiento_insumo" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#9B59B6;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="REQUERIMIENTO_INSUMO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_requerimiento_insumo_b" parent="grp_requerimiento_insumo" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#9B59B6;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_solicitud &lt;i&gt;(FK)&lt;/i&gt;&lt;/u&gt;&lt;br&gt;&lt;u&gt;# id_insumo &lt;i&gt;(FK)&lt;/i&gt;&lt;/u&gt;&lt;br&gt;&lt;br&gt;* cantidad" vertex="1">
+          <mxGeometry height="110" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_requerimiento_instrumento" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="156" width="280" x="391" y="1628" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_requerimiento_instrumento_h" parent="grp_requerimiento_instrumento" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#BB6BD9;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="REQUERIMIENTO_INSTRUMENTO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_requerimiento_instrumento_b" parent="grp_requerimiento_instrumento" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#BB6BD9;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_solicitud &lt;i&gt;(FK)&lt;/i&gt;&lt;/u&gt;&lt;br&gt;&lt;u&gt;# id_instrumento &lt;i&gt;(FK)&lt;/i&gt;&lt;/u&gt;&lt;br&gt;&lt;br&gt;* cantidad" vertex="1">
+          <mxGeometry height="110" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_requerimiento_equipo" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="156" width="280" x="1380" y="1617" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_requerimiento_equipo_h" parent="grp_requerimiento_equipo" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#9B59B6;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="REQUERIMIENTO_EQUIPO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_requerimiento_equipo_b" parent="grp_requerimiento_equipo" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#9B59B6;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_solicitud &lt;i&gt;(FK)&lt;/i&gt;&lt;/u&gt;&lt;br&gt;&lt;u&gt;# id_equipo &lt;i&gt;(FK)&lt;/i&gt;&lt;/u&gt;&lt;br&gt;&lt;br&gt;* cantidad" vertex="1">
+          <mxGeometry height="110" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_consentimiento_informado" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="348" width="280" x="822" y="2130" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_consentimiento_informado_h" parent="grp_consentimiento_informado" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#BB6BD9;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="CONSENTIMIENTO_INFORMADO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_consentimiento_informado_b" parent="grp_consentimiento_informado" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#BB6BD9;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_consentimiento&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_solicitud &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* nombre_procedimiento&lt;br&gt;* objetivo&lt;br&gt;* id_medico &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* firma_paciente&lt;br&gt;* fecha&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o caracteristicas&lt;br&gt;o riesgos" vertex="1">
+          <mxGeometry height="302" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_chequeo_preanestesico" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="276" width="280" x="1040" y="1756" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_chequeo_preanestesico_h" parent="grp_chequeo_preanestesico" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#9B59B6;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="CHEQUEO_PREANESTESICO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_chequeo_preanestesico_b" parent="grp_chequeo_preanestesico" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#9B59B6;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_chequeo&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_solicitud &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* clasificacion_asa&lt;br&gt;* id_medico_clasifica &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* id_anestesista &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o plan_anestesia" vertex="1">
+          <mxGeometry height="230" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_quirofano" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="180" width="280" x="1321" y="797" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_quirofano_h" parent="grp_quirofano" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#BB6BD9;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="QUIROFANO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_quirofano_b" parent="grp_quirofano" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#BB6BD9;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_quirofano&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_hospital &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* numero&lt;br&gt;* estado" vertex="1">
+          <mxGeometry height="134" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_cirugia" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="324" width="280" x="1052" y="1029" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_cirugia_h" parent="grp_cirugia" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#9B59B6;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="CIRUGIA" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_cirugia_b" parent="grp_cirugia" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#9B59B6;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_cirugia&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_solicitud &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* id_ingreso &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* id_quirofano &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* id_enfermero_encargado &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* fecha_hora_inicio&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o fecha_hora_fin&lt;br&gt;o costo" vertex="1">
+          <mxGeometry height="278" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_insumo_utilizado_cirugia" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="156" width="280" x="721" y="989" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_insumo_utilizado_cirugia_h" parent="grp_insumo_utilizado_cirugia" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#BB6BD9;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="INSUMO_UTILIZADO_CIRUGIA" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_insumo_utilizado_cirugia_b" parent="grp_insumo_utilizado_cirugia" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#BB6BD9;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_cirugia &lt;i&gt;(FK)&lt;/i&gt;&lt;/u&gt;&lt;br&gt;&lt;u&gt;# id_insumo &lt;i&gt;(FK)&lt;/i&gt;&lt;/u&gt;&lt;br&gt;&lt;br&gt;* cantidad" vertex="1">
+          <mxGeometry height="110" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_registro_procedimiento_cirugia" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="324" width="342" x="989" y="614" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_registro_procedimiento_cirugia_h" parent="grp_registro_procedimiento_cirugia" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#9B59B6;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="REGISTRO_PROCEDIMIENTO_CIRUGIA" vertex="1">
+          <mxGeometry height="40" width="342" x="-31" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_registro_procedimiento_cirugia_b" parent="grp_registro_procedimiento_cirugia" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#9B59B6;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_registro&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_cirugia &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* etapa&lt;br&gt;* procedimiento&lt;br&gt;* resultado&lt;br&gt;* hora_registro&lt;br&gt;* id_enfermero &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o descripcion" vertex="1">
+          <mxGeometry height="278" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_servicio_hospitalizacion" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="132" width="280" x="2839" y="2142" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_servicio_hospitalizacion_h" parent="grp_servicio_hospitalizacion" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#17A398;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="SERVICIO_HOSPITALIZACION" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_servicio_hospitalizacion_b" parent="grp_servicio_hospitalizacion" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#17A398;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_servicio&lt;/u&gt;&lt;br&gt;&lt;br&gt;* nombre" vertex="1">
+          <mxGeometry height="86" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_hospitalizacion_detalle" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="276" width="280" x="2910" y="1755" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_hospitalizacion_detalle_h" parent="grp_hospitalizacion_detalle" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#56CCF2;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="HOSPITALIZACION_DETALLE" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_hospitalizacion_detalle_b" parent="grp_hospitalizacion_detalle" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#56CCF2;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_hospitalizacion_detalle&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_ingreso &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* id_servicio &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* id_camilla &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o costo_dia&lt;br&gt;o dias" vertex="1">
+          <mxGeometry height="230" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_factura" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="324" width="280" x="2610" y="541" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_factura_h" parent="grp_factura" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#17A398;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="FACTURA" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_factura_b" parent="grp_factura" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#17A398;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_factura&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_hospital &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* id_paciente &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* fecha&lt;br&gt;* descripcion&lt;br&gt;* monto&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o id_consulta &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;o id_ingreso &lt;i&gt;(FK)&lt;/i&gt;" vertex="1">
+          <mxGeometry height="278" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_cuota" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="252" width="280" x="3037" y="1028" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_cuota_h" parent="grp_cuota" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#56CCF2;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="CUOTA" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_cuota_b" parent="grp_cuota" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#56CCF2;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_cuota&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_factura &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* numero_cuota&lt;br&gt;* monto&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o fecha_pago" vertex="1">
+          <mxGeometry height="206" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_calificacion_hospital" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="276" width="280" x="2376" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_calificacion_hospital_h" parent="grp_calificacion_hospital" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#17A398;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="CALIFICACION_HOSPITAL" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_calificacion_hospital_b" parent="grp_calificacion_hospital" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#17A398;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_calificacion&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_hospital &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* puntaje&lt;br&gt;* fecha&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o id_paciente &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;o comentario" vertex="1">
+          <mxGeometry height="230" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_calificacion_medico" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="276" width="280" x="2146" y="1845" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_calificacion_medico_h" parent="grp_calificacion_medico" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#56CCF2;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="CALIFICACION_MEDICO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_calificacion_medico_b" parent="grp_calificacion_medico" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#56CCF2;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_calificacion&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_medico &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* puntaje&lt;br&gt;* fecha&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o id_paciente &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;o comentario" vertex="1">
+          <mxGeometry height="230" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_calificacion_enfermero" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="276" width="280" x="1661" y="591" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_calificacion_enfermero_h" parent="grp_calificacion_enfermero" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#17A398;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="CALIFICACION_ENFERMERO" vertex="1">
+          <mxGeometry height="40" width="280" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_calificacion_enfermero_b" parent="grp_calificacion_enfermero" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#17A398;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_calificacion&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_enfermero &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* puntaje&lt;br&gt;* fecha&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o id_paciente &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;o comentario" vertex="1">
+          <mxGeometry height="230" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_calificacion_personal_encargado" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="276" width="370" x="2070" y="541" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_calificacion_personal_encargado_h" parent="grp_calificacion_personal_encargado" style="rounded=1;arcSize=30;whiteSpace=wrap;html=1;fillColor=#56CCF2;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;fontFamily=Georgia;" value="CALIFICACION_PERSONAL_ENCARGADO" vertex="1">
+          <mxGeometry height="40" width="370" x="-45" as="geometry" />
+        </mxCell>
+        <mxCell id="grp_calificacion_personal_encargado_b" parent="grp_calificacion_personal_encargado" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#1B1E27;strokeColor=#56CCF2;strokeWidth=2;fontColor=#FFFFFF;fontSize=18;align=left;verticalAlign=top;spacing=10;fontFamily=Georgia;" value="&lt;u&gt;# id_calificacion&lt;/u&gt;&lt;br&gt;&lt;br&gt;* id_encargado &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;* puntaje&lt;br&gt;* fecha&lt;br&gt;&lt;br&gt;-------------------------------------------&lt;br&gt;o id_paciente &lt;i&gt;(FK)&lt;/i&gt;&lt;br&gt;o comentario" vertex="1">
+          <mxGeometry height="230" width="280" y="46" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1" edge="1" parent="1" source="grp_municipio" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_departamento" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2" edge="1" parent="1" source="grp_hospital" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_municipio" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3" edge="1" parent="1" source="grp_paciente" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_municipio" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel4" edge="1" parent="1" source="grp_responsable_paciente" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_paciente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel5" edge="1" parent="1" source="grp_responsable_paciente" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="grp_municipio" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel6" edge="1" parent="1" source="grp_medico" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="grp_municipio" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel7" edge="1" parent="1" source="grp_medico" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_especialidad" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel8" edge="1" parent="1" source="grp_medico" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_hospital" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel9" edge="1" parent="1" source="grp_enfermero" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_hospital" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel10" edge="1" parent="1" source="grp_personal_encargado" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_hospital" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel11" edge="1" parent="1" source="grp_cita_programada" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_paciente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel12" edge="1" parent="1" source="grp_cita_programada" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_medico" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel13" edge="1" parent="1" source="grp_consulta_paciente_b" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_paciente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel14" edge="1" parent="1" source="grp_consulta_paciente" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_medico" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel15" edge="1" parent="1" source="grp_consulta_paciente" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="grp_cita_programada" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel16" edge="1" parent="1" source="grp_receta_medica" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_consulta_paciente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel17" edge="1" parent="1" source="grp_receta_medica" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_hospital" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel18" edge="1" parent="1" source="grp_medicamento_recetado" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_receta_medica" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel19" edge="1" parent="1" source="grp_unidad_hospital" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_hospital" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel20" edge="1" parent="1" source="grp_camilla" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_unidad_hospital" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel21" edge="1" parent="1" source="grp_ingreso" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_paciente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel22" edge="1" parent="1" source="grp_ingreso" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_unidad_hospital" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel23" edge="1" parent="1" source="grp_ingreso" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_medico" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel24" edge="1" parent="1" source="grp_ingreso" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="grp_responsable_paciente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel25" edge="1" parent="1" source="grp_ingreso" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="grp_camilla" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel26" edge="1" parent="1" source="grp_egreso" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_ingreso" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel27" edge="1" parent="1" source="grp_egreso" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_medico" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel28" edge="1" parent="1" source="grp_egreso" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="grp_traslado" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel29" edge="1" parent="1" source="grp_diagnostico_secundario" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_egreso" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel30" edge="1" parent="1" source="grp_traslado" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_paciente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel31" edge="1" parent="1" source="grp_traslado" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_medico" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel32" edge="1" parent="1" source="grp_traslado" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_unidad_hospital" value="destino">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel33" edge="1" parent="1" source="grp_traslado" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="grp_unidad_hospital" value="origen">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel34" edge="1" parent="1" source="grp_solicitud_cirugia" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_paciente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel35" edge="1" parent="1" source="grp_solicitud_cirugia" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_medico" value="cirujano">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel36" edge="1" parent="1" source="grp_solicitud_cirugia" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_hospital" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel37" edge="1" parent="1" source="grp_solicitud_cirugia" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="grp_quirofano" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel38" edge="1" parent="1" source="grp_requerimiento_insumo" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_solicitud_cirugia" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel39" edge="1" parent="1" source="grp_requerimiento_insumo" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_insumo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel40" edge="1" parent="1" source="grp_requerimiento_instrumento" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_solicitud_cirugia" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel41" edge="1" parent="1" source="grp_requerimiento_instrumento" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_instrumento" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel42" edge="1" parent="1" source="grp_requerimiento_equipo" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_solicitud_cirugia" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel43" edge="1" parent="1" source="grp_requerimiento_equipo" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_equipo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel44" edge="1" parent="1" source="grp_consentimiento_informado" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_solicitud_cirugia" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel45" edge="1" parent="1" source="grp_consentimiento_informado" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_medico" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel46" edge="1" parent="1" source="grp_chequeo_preanestesico" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_solicitud_cirugia" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel47" edge="1" parent="1" source="grp_chequeo_preanestesico" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_medico" value="clasifica">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel48" edge="1" parent="1" source="grp_chequeo_preanestesico" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_medico" value="anestesista">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel49" edge="1" parent="1" source="grp_quirofano" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_hospital" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel50" edge="1" parent="1" source="grp_cirugia" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_solicitud_cirugia" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel51" edge="1" parent="1" source="grp_cirugia" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_ingreso" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel52" edge="1" parent="1" source="grp_cirugia" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_quirofano" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel53" edge="1" parent="1" source="grp_cirugia" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_enfermero" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel54" edge="1" parent="1" source="grp_insumo_utilizado_cirugia" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_cirugia" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel55" edge="1" parent="1" source="grp_insumo_utilizado_cirugia" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_insumo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel56" edge="1" parent="1" source="grp_registro_procedimiento_cirugia" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_cirugia" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel57" edge="1" parent="1" source="grp_registro_procedimiento_cirugia" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_enfermero" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel58" edge="1" parent="1" source="grp_hospitalizacion_detalle" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_ingreso" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel59" edge="1" parent="1" source="grp_hospitalizacion_detalle" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_servicio_hospitalizacion" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel60" edge="1" parent="1" source="grp_hospitalizacion_detalle" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_camilla" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel61" edge="1" parent="1" source="grp_factura" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_hospital" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel62" edge="1" parent="1" source="grp_factura" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_paciente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel63" edge="1" parent="1" source="grp_factura" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="grp_consulta_paciente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel64" edge="1" parent="1" source="grp_factura" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="grp_ingreso" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel65" edge="1" parent="1" source="grp_cuota" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_factura" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel66" edge="1" parent="1" source="grp_calificacion_hospital" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_hospital" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel67" edge="1" parent="1" source="grp_calificacion_hospital" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="grp_paciente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel68" edge="1" parent="1" source="grp_calificacion_medico" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_medico" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel69" edge="1" parent="1" source="grp_calificacion_medico" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="grp_paciente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel70" edge="1" parent="1" source="grp_calificacion_enfermero" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_enfermero" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel71" edge="1" parent="1" source="grp_calificacion_enfermero" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="grp_paciente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel72" edge="1" parent="1" source="grp_calificacion_personal_encargado" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERone;" target="grp_personal_encargado" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel73" edge="1" parent="1" source="grp_calificacion_personal_encargado" style="edgeStyle=entityRelationEdgeStyle;html=1;fontSize=10;fontColor=#C9D2DC;rounded=1;jettySize=auto;startFill=0;endFill=0;strokeColor=#C9D2DC;labelBackgroundColor=#1B1E27;startArrow=ERzeroToMany;endArrow=ERzeroToOne;" target="grp_paciente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
