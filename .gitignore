@@ -1,0 +1,21 @@
+# Dependencias y artefactos de build del ORM (Next.js + TypeORM)
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+
+# Credenciales locales: se versiona solo .env.example
+.env
+.env.local
+
+# Python (scripts de apoyo)
+__pycache__/
+*.pyc
+.venv/
+
+# Temporales
+*.log
+.DS_Store
+
+# Archivos temporales de la generacion del PDF
+proyecto-2/documentacion/_build/
