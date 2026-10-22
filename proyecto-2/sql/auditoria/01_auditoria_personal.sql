@@ -1,4 +1,4 @@
--- AUDITORIA P2-01: trazabilidad automatica de cambios sensibles del personal medico (Bloque F, objetivo 20)
+-- AUDITORIA: trazabilidad automatica de cambios sensibles del personal medico (Bloque F, objetivo 20)
 -- Cada vez que cambia el salario, la especialidad o el nivel de acceso de un medico, un trigger de la propia
 -- base guarda quien lo hizo, que campo cambio, el valor anterior, el nuevo y el momento exacto. No depende de
 -- la aplicacion ni de que el usuario se acuerde de registrarlo.

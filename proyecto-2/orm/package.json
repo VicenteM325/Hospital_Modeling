@@ -1,0 +1,30 @@
+{
+  "name": "hospital-orm-proyecto2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Objetivos 2, 8 y 11 del Proyecto 2 resueltos con SQL parametrizado y con TypeORM (QueryBuilder), con comparacion de resultados",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "comparar": "tsx scripts/comparar.ts"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "pg": "8.23.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "typeorm": "1.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/pg": "8.23.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3"
+  },
+  "engines": {
+    "node": ">=24.11.0"
+  }
+}
